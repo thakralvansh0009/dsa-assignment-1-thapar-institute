@@ -1,0 +1,35 @@
+//Find the Transpose of a Matrix
+#include <iostream>
+using namespace std;
+
+int main (){
+int p,q;
+cout<<"Enter the rows of the matrix: ";
+cin>>p;
+cout<<"Enter the columns of the matrix: ";
+cin>>q;
+int arr[p][q];
+for(int i=0; i<p; i++){
+for(int j=0; j<q; j++){
+cin >> arr[i][j];
+}}
+cout<<"The original matrix is : \n";
+for(int i=0; i<p; i++){
+for(int j=0; j<q; j++){
+cout<<arr[i][j]<<" ";
+}
+cout<<"\n";
+}
+int brr[q][p];
+for(int i=0; i<q; i++){
+for(int j=0; j<p; j++){
+brr[i][j]= arr[j][i];
+}}
+cout<<"The transposed matrix is :  \n";
+for(int i=0; i<q; i++){
+for(int j=0; j<p; j++){
+cout<<brr[i][j]<<" ";
+}
+cout<<"\n";
+}
+}
